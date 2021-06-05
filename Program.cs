@@ -15,9 +15,11 @@ namespace DIO.Series
                 switch (opcaoUsuario)
                 {
                     case "1":
+                        Console.WriteLine("Menu Serie");
                         MenuSerie();
                         break;
                     case "2":
+                        Console.WriteLine("Menu Filme");
                         MenuFilme();
                         break;
                     case "C":
@@ -68,7 +70,6 @@ namespace DIO.Series
             string opcaoUsuario = ObterOpcaoUsuario();
             while (opcaoUsuario.ToUpper() != "X")
             {
-                Console.WriteLine("Menu Série");
                 switch (opcaoUsuario)
                 {
                     case "1":
@@ -102,23 +103,22 @@ namespace DIO.Series
             string opcaoUsuario = ObterOpcaoUsuario();
             while (opcaoUsuario.ToUpper() != "X")
             {
-                Console.WriteLine("Menu Série");
-               /* switch (opcaoUsuario)
+                switch (opcaoUsuario)
                 {
                     case "1":
-                        SerieController.ListarSerie();
+                        FilmeController.ListarSerie();
                         break;
                     case "2":
-                        SerieController.Insere();
+                        FilmeController.Insere();
                         break;
                     case "3":
-                        SerieController.Atualizar();
+                        FilmeController.Atualizar();
                         break;
                     case "4":
-                        SerieController.Excluir();
+                        FilmeController.Excluir();
                         break;
                     case "5":
-                        SerieController.RetornaPorId();
+                        FilmeController.RetornaPorId();
                         break;
                     case "C":
                         Console.Clear();
@@ -127,7 +127,7 @@ namespace DIO.Series
                         Console.WriteLine("Voltando...");
                         break;
                     default: throw new ArgumentException("Opção informada não existe!");
-                }*/
+                }
                 opcaoUsuario = ObterOpcaoUsuario();
             }
         }
